@@ -1,0 +1,121 @@
+#adminmenu {
+
+	li.wp-menu-separator {
+		height: 1px;
+		margin: 12px 0;
+	}
+
+	div.separator {
+		background: #444;
+		height: 1px;
+	}
+
+}
+
+.wp-admin {
+
+	.acf-fields > .acf-field-group {
+		border-top: 20px solid #f1f1f1;
+		border-bottom: 20px solid #f1f1f1;
+	}
+
+	.acf-field[data-name='home_card_title'] {
+		border-top: 50px solid #f1f1f1d4;
+		border-top-width: 50px !important;
+	}
+
+	.acf-field[data-name='home_card_cta_icon'] {
+		padding-bottom: 60px !important;
+	}
+
+
+	// Make 'Bare' WYSIWYG editors 5 lines high and hide the status bar
+	.acf-editor-wrap[data-toolbar='bare'] {
+		iframe {
+			min-height: 144px;
+			height: 144px !important;
+		}
+		.mce-statusbar {
+			height: 0;
+			overflow: hidden;
+		}
+	}
+
+	.single-line {
+		.acf-editor-wrap[data-toolbar='bare'] {
+			iframe {
+				min-height: 56px;
+				height: 56px !important;
+			}
+		}
+	}
+
+	.acf-field {
+		&[data-type="group"] {
+			padding: 0;
+			border: none;
+			> .acf-label {
+				display: none;
+			}
+			.acf-fields.-sidebar {
+				border: none;
+			}
+		}
+	}
+
+	// hides Parent Taxonomy dropdown selection from custom taxonomies
+	&.taxonomy-regulations .term-parent-wrap {
+		display: none;
+	}
+
+	.featured_image.column-featured_image {
+		img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	// under Plugins -> Add New, this prevents SVG icons from overflowing their containers
+	// probably a better solution available, but this suffices
+	.plugin-install-tab-featured img[src*='.svg'] {
+		max-width: 128px;
+	}
+
+}
+
+
+
+
+
+// .wp-block {
+//     max-width: 1136px;
+// }
+//
+// .edit-post-visual-editor {
+//
+//   .editor-styles-wrapper,
+//   .editor-post-title__block .editor-post-title__input,
+//   input,
+//   textarea,
+//   p, h1, h2, h3, h4, h5, h6 {
+//     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important;
+//   }
+//
+// }
+//
+// .components-panel__body-title {
+//   border-bottom: 1px solid #e2e4e7;
+//   background: #fff;
+// }
+//
+// .components-panel__body.is-opened:not(.edit-post-settings-sidebar__panel-block) {
+//   background: #f9f9f9;
+// }
+//
+// .components-base-control, .editor-post-featured-image {
+//   margin-top: 16px !important;
+// }
+//
+// .post-type-use_cases .wp-block-heading h3 {
+//   font-size: 16px;
+// }

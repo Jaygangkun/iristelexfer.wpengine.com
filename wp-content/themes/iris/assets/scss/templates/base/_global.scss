@@ -1,0 +1,466 @@
+body {
+
+	&.admin-bar {
+		padding-bottom: 32px;
+	}
+
+	&.locked {
+		height: 100vh;
+		overflow-y: hidden;
+		@include bp(lg) {
+			padding-right: 15px;
+			header {
+				padding-right: 15px;
+			}
+		}
+	}
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+}
+
+[role="button"] {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.clear {
+	clear: both
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content-with-max {
+	max-width: 560px;
+}
+
+.select-wrap {
+	width: 100%;
+}
+
+// .select-css, .gform_body select {
+//   display: block;
+//   font-size: 13px;
+//   font-weight: 700;
+//   font-family: 'Lato', sans-serif;
+//   color: rgba($gray, .6);
+//   line-height: 21px;
+//   letter-spacing: 1.95px;
+//   text-transform: uppercase;
+//   padding: 10px 30px 8px 10px;
+//   min-width: 210px;
+//   max-width: 100%;
+//   box-sizing: border-box;
+//   margin: 0;
+//   border: 1px solid $lightgray;
+//   border-radius: .5em;
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   appearance: none;
+//   background-color: transparent;
+//   background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23606060%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+//   background-repeat: no-repeat, repeat;
+//   background-position: right .9em top 50%, 0 0;
+//   background-size: .55em auto, 100%;
+//   transition: all .3s ease;
+// }
+
+.select-css::-ms-expand, .gform_body select::ms-expand {
+	display: none;
+}
+
+.select-css:hover, .gform_body select:hover {
+	border-color: $gray;
+}
+
+.select-css:focus, .gform_body select:focus {
+	outline: none;
+}
+
+.select-css option, .gform_body select option {
+
+	&.default {
+		opacity: .6;
+	}
+
+}
+
+#wpadminbar {
+	display: none;
+}
+
+.sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+}
+
+.sticky:before,
+.sticky:after {
+		content: '';
+		display: table;
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important
+}
+
+.wp-block-separator {
+
+	&.is-style-default {
+		max-width: 300px;
+		margin: auto;
+		background: $lightgray;
+		color: $lightgray;
+		border: none;
+		height: 1px;
+	}
+
+	&.is-style-wide {
+		max-width: none;
+		margin: auto;
+		background: $lightgray;
+		color: $lightgray;
+		border: none;
+		height: 1px;
+	}
+
+}
+
+// a {
+//   color: $cta-primary;
+//   text-decoration: underline;
+//   font-weight: 700;
+//   transform: translateZ(0);
+
+//   &.no-click {
+//     cursor: default;
+//     opacity: .36;
+//   }
+
+//   &.btn {
+//     letter-spacing: 1.95px;
+//     white-space: nowrap;
+//     position: relative;
+//     overflow: hidden;
+//   	color: $gray;
+//     font-weight: 700;
+//     font-size: rem(13px);
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     line-height: rem(20px);
+//     text-decoration: none;
+//     padding: 12px 30px;
+//     border-radius: 36px;
+//     display: inline-block;
+//     border: 1px solid $lightgray;
+//     -webkit-transform: translateZ(0);
+//     transition: all 0.3s linear;
+
+//       span {
+//         position: relative;
+//         z-index: 2;
+//         transform: translateZ(0);
+
+//           i {
+//             display: inline-block;
+//             position: relative;
+//             margin-left: 16px;
+//             font-size: 18px;
+//             top: 2px;
+//             transition: all 0.3s linear;
+//           }
+
+//       }
+
+//       i {
+//         margin-left: 10px;
+//       }
+
+//       &.btn-cta {
+//         color: #fff;
+//         background: $cta-primary;
+//         border:none;
+//         text-decoration: none;
+
+//           &:before, &:after {
+//             display: none;
+//           }
+
+//           &:active {
+//             background: $cta-primary-focus;
+//           }
+
+//       }
+
+//   }
+
+// }
+
+.clear-header {
+	padding-top: $mobile-height;
+}
+
+main {
+	position: relative;
+}
+
+.responsive-tables {
+	max-width: 100%;
+	overflow-x: scroll;
+}
+
+table, td, th {
+	border: 1px solid $lightgray !important;
+	text-align: left;
+}
+
+table {
+	border-collapse: collapse !important;
+	width: 100%;
+	margin: 30px 0;
+}
+
+th, td {
+	padding: 15px;
+	min-width: 150px;
+	line-height: 1.75;
+}
+
+.is-flex, .flex-columns > .row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+}
+.is-flex > [class*='col-'], .flex-columns > .row > [class*='col-'] {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.post-content {
+
+	h2 {
+		margin-top: 40px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+
+	h4 {
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		font-size: rem(16px);
+		line-height: rem(28px);
+		letter-spacing: rem(2.24px);
+		font-weight: 700;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	blockquote, q {
+		quotes: none;
+		border-left: 3px solid;
+		padding-left: 15px;
+		font-style: italic;
+
+			p {
+				font-size: rem(18px);
+			}
+
+	}
+
+	.wp-block-image figcaption {
+		font-weight: 700;
+		font-size: 11px;
+		letter-spacing: 0.28px;
+		color: $gray;
+	}
+
+	ul {
+		list-style: disc;
+		padding-left: 20px;
+	}
+
+	ol {
+		list-style: decimal;
+		counter-reset: item;
+		padding-left: 20px;
+
+			li {
+
+					&:before {
+						content: " ";
+						counter-increment: item;
+					}
+
+					ol {
+						list-style: decimal;
+						counter-reset: item;
+						padding-left: 20px;
+						margin-top: 10px;
+
+							li {
+								display: block;
+								padding-left: 25px;
+
+									&:before {
+										content: counters(item, ".") " ";
+										counter-increment: item;
+										float: left;
+										position: relative;
+										margin-left: -36px;
+									}
+
+							}
+
+					}
+
+			}
+
+	}
+
+	li {
+		font-size: rem(16px);
+		line-height: rem(28px);
+		letter-spacing: rem(.32px);
+		margin-bottom: rem(20px);
+	}
+
+	p {
+		margin-bottom: 30px;
+	}
+
+	.wp-block-image {
+		margin-bottom: 32px;
+	}
+
+}
+
+.post-pagination {
+	margin-top: 40px;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+
+		li {
+			display: inline-block;
+
+			&:first-of-type, &:last-of-type {
+				a {
+					border: 1px solid $lightgray;
+					padding: rem(12px) rem(24px);
+					border-radius: 4px;
+				}
+			}
+
+			&:first-of-type {
+				margin-right: rem(15px);
+			}
+
+			&:last-of-type {
+				margin-left: rem(15px);
+			}
+
+			a {
+				box-sizing: content-box;
+				line-height: normal;
+				font-size: rem(13px);
+				display: block;
+				padding: rem(12px);
+				text-align: center;
+				width: rem(18px);
+				height: rem(16px);
+				text-decoration: none;
+				color: rgba($gray, .6);
+			}
+
+			span {
+				color: rgba($gray, 1);
+				&.current {
+					font-weight: 700;
+					border: 1px solid $lightgray;
+					border-radius: 4px;
+					box-sizing: content-box;
+					line-height: normal;
+					font-size: rem(13px);
+					display: block;
+					padding: rem(12px);
+					text-align: center;
+					width: rem(18px);
+					height: rem(16px);
+					text-decoration: none;
+				}
+			}
+
+		}
+	}
+}
+
+.is-ie {
+	&.ie-11 {
+
+	}
+}
+
+.has-transform-uppercase {
+	text-transform: uppercase;
+}
+
+.has-transform-lowercase {
+	text-transform: lowercase;
+}
+
+.has-transform-capitalize {
+	text-transform: capitalize;
+}

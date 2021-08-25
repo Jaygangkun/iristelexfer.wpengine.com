@@ -1,0 +1,59 @@
+/*******************************************************************************
+
+  Mobile Menu - Uncomment if needed or add your own
+
+*******************************************************************************/
+
+@media only screen and (max-width: $menu-break-max) {
+
+}
+
+/*******************************************************************************
+
+  Desktop Menu
+
+*******************************************************************************/
+
+@media only screen and (min-width: $menu-break-min) {
+
+}
+
+@media only screen and (min-width: $min-lg) {
+
+}
+
+
+/*******************************************************************************
+
+  MENU PAGE INDICATORS
+
+*******************************************************************************/
+
+// .current-menu-item a, .current-menu-parent a {
+// }
+
+// @media only screen and (min-width: $menu-break-min) {
+
+//   .current-menu-item {
+//     // border-color: $cta-primary !important;
+
+//       a {
+//         color: $purple_menu;
+//       }
+
+//   }
+
+//   .current-menu-item,  .current-menu-parent, .category .current_page_parent, .single-post .current_page_parent {
+
+//       > a {
+//         color: $purple_menu;
+//       }
+
+//       // &::after {
+//       //   -ms-transform: scaleY(1) !important;
+//       //       transform: scaleY(1) !important;
+//       // }
+
+//   }
+
+// }

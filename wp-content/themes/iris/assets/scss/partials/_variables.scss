@@ -1,0 +1,128 @@
+/******************************************
+// Colors
+******************************************/
+
+$darkgray: #363636;
+$gray: #606060;
+$lightgray: #dedede;
+$lightergray: #f3f3f3;
+$offwhite: #fafafa;
+
+$offwhite-opacity-on-blue: #9a9fad;
+
+$cta-primary: rgb(40,110,250);
+$cta-primary-hover: rgba(40, 110, 250, 0.2);
+$cta-primary-focus: rgba(40, 110, 250, 0.5);
+
+$text-color: $darkgray;
+
+$iris: #F434A6;
+$purple_light: #867AC7;
+$purple_hero: #B9B3DF;
+$purple_dark: #070742;
+$purple_btn: #5141AF;
+$purple_h3: #33248E;
+$purple_p: #52527B;
+$purple_footer: #A1A7D1;
+$purple_menu: #ADA7D2;
+$blue: #003595;
+$blue_hover: #f4f6fb;
+$white: #FFFFFF;
+
+/******************************************
+// Sizes
+******************************************/
+
+@mixin bp($size) {
+  $sm: 480px;
+  $md: 768px;
+  $lg: 992px;
+  $xl: 1280px;
+
+  @if $size == sm {
+    @media (min-width: #{$sm}){ @content; }
+  }
+  @else if $size == md {
+    @media (min-width: #{$md}){ @content; }
+  }
+  @else if $size == lg {
+    @media (min-width: #{$lg}){ @content; }
+  }
+  @else if $size == xl {
+    @media (min-width: #{$xl}){ @content; }
+  }
+}
+
+@mixin bp-max($size) {
+  $sm: 479px;
+  $md: 767px;
+  $lg: 991px;
+  $xl: 1279px;
+
+  @if $size == sm {
+    @media (max-width: #{$sm}){ @content; }
+  }
+  @else if $size == md {
+    @media (max-width: #{$md}){ @content; }
+  }
+  @else if $size == lg {
+    @media (max-width: #{$lg}){ @content; }
+  }
+  @else if $size == xl {
+    @media (max-width: #{$xl}){ @content; }
+  }
+}
+
+$min-xs: 540px;
+$min-sm: 768px;
+$min-md: 992px;
+$min-lg: 1200px;
+$max-xs: 539px;
+$max-sm: 767px;
+$max-md: 991px;
+$max-lg: 1199px;
+
+/******************************************
+// Mobile menu
+******************************************/
+
+$bg: rgb(40,110,250);
+$menu-bg: #fff;
+$menu-hover: rgba(40,110,250,0.25);
+$size: 5em;
+$time: 350ms;
+$degree: 135deg;
+$timing: ease;
+
+$desk-height: 76px;
+$mobile-height: 47px;
+
+$menu-break-min: 1030px;
+$menu-break-max: 1029px;
+
+/******************************************
+// Mixins
+******************************************/
+
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+@mixin transition($duration, $timing-func) {
+	transition: $duration $timing-func all;
+}
+
+@mixin scale($size) {
+	-ms-transform: scale($size);
+	    transform: scale($size);
+}
+
+@mixin rotate($deg) {
+	-ms-transform: rotate($deg);
+	    transform: rotate($deg);
+}

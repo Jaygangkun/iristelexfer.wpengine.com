@@ -1,0 +1,292 @@
+.regulations {
+
+	&.intro {
+		padding: 136px 0 80px;
+		align-items: center;
+		@include bp(lg) {
+			padding: 204px 0 104px;
+		}
+		h2, p {
+			text-align: center;
+		}
+		p {
+			margin-top: 32px;
+		}
+		.map {
+			margin: 0 auto;
+			@include bp(sm) {
+				margin: 40px 0 72px;
+			}
+			@include bp(lg) {
+				margin: 72px auto 0;
+			}
+			svg {
+				width: 100%;
+				@include bp(lg) {
+					min-height: 600px;
+				}
+			}
+		}
+		.state {
+			cursor: pointer;
+			path, rect {
+				fill: #384186;
+				transition: fill 0s linear;
+			}
+			&:hover {
+				path, rect {
+					fill: $iris;
+					transition: fill 0.3s linear;
+				}
+			}
+			&.active {
+				path, rect {
+					fill: $iris;
+					transition: fill 0s linear;
+				}
+			}
+		}
+		.white-block {
+			max-width: 100%;
+			@include bp(lg) {
+				margin-top: 72px;
+			}
+			select {
+				margin-top: 24px;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				display: block;
+				width: 100%;
+				max-width: 291px;
+				height: 48px;
+				padding-left: 17px;
+				border: 2px solid transparent;
+				border-radius: 10px;
+				outline: none;
+				font-family: $gibson;
+				font-size: 18px;
+				font-weight: 300;
+				text-indent: 0;
+				color: $purple_p;
+				background-color: rgba(185, 179, 223, 0.15);
+				transition: border .2s ease-in-out;
+				background: rgba(185, 179, 223, 0.15) url('../img/icon-chevron-down.svg') no-repeat right center;
+				&:focus,
+				&:hover {
+					border: 2px solid $purple_footer;
+				}
+			}
+		}
+		.fetched {
+			width: 100%;
+			display: none;
+			hr {
+				margin-bottom: 36px;
+				@include bp(lg) {
+					margin-bottom: 72px;
+				}
+			}
+			.animation-container {
+				display: none;
+				> .flex	{
+					flex-direction: column;
+					@include bp(lg) {
+						flex-direction: row;
+						> div {
+							width: 50%;
+						}
+					}
+				}
+			}
+			p.no-data {
+				margin: 0;
+				color: $purple_p;
+				display: none;
+			}
+			h2 {
+				margin-bottom: 36px;
+				color: $purple_dark;
+				@include bp(lg) {
+					margin: -12px 72px 0 0; //-12px top
+					// line-height: 1;
+				}
+			}
+			.column {
+				width: auto;
+				margin: 0 auto;
+				> .flex {
+					width: auto;
+					margin-bottom: 20px;
+					align-items: center;
+				}
+				@include bp(lg) {
+					align-items: flex-start;
+					justify-content: flex-start;
+					> .flex {
+						margin-bottom: 20px;
+						align-items: center;
+					}
+				}
+			}
+			.icon:after {
+				content: url('../img/icon-x-circle.svg');
+			}
+			.icon.check:after {
+				content: url('../img/icon-check-circle.svg');
+			}
+			.regulation {
+				margin-left: 20px;
+				font-family: $gibson;
+				font-size: 18px;
+				font-weight: 300;
+			}
+			button {
+				margin-top: 16px;
+				background-color: $purple_btn;
+			}
+		}
+	}
+
+	&.definitions {
+		padding: 80px 0;
+		@include bp(lg) {
+			padding: 136px 0 168px;	
+		}
+		h2 {
+			text-align: center;
+		}
+		.definitions-container {
+			margin-top: 32px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			@include bp(lg) {
+				margin-top: 80px;
+				flex-direction: row;
+				align-items: flex-start;
+			}
+		}
+		.definition {
+			width: 100%;
+			max-width: 420px;
+			height: auto;
+			padding: 24px 0;
+			cursor: pointer;
+			@include bp(lg) {
+				max-width: 340px;
+			}
+			@include bp(xl) {
+				max-width: 420px;
+			}
+			&.active img {
+				transform: rotate(180deg);
+			}
+		}
+		.accordion {
+			height: auto;
+			justify-content: space-between;
+		}
+		.panel {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+		}
+	}
+
+	&.what-to-consider {
+		padding: 80px 0;
+		@include bp(lg) {
+			padding: 136px 0;
+		}
+		> .inner > .flex {
+			p {
+				margin-top: 32px;
+				color: $purple_footer;
+			}
+		}
+		h2, p {
+			text-align: center;
+		}
+		hr {
+			max-width: 930px;
+			@include bp(xl) {
+				max-width: 1024px;
+			}
+		}
+		.closer {
+			max-width: 640px;
+			padding: 80px 0 204px;
+			@include bp(lg) {
+				padding: 136px 0 204px;
+			}
+
+		}
+
+	}
+
+	.wysiwyg-output {
+		max-width: 930px;
+		margin: 0 auto;
+		padding: 0 30px;
+		@include bp(lg) {
+			padding: 0;
+		}
+		@include bp(xl) {
+			max-width: 1024px;
+		}
+
+		h1, h2, h3, h4, p, ul, li {
+			color: $white;
+		}
+		h3, h4 {
+			text-align: center;
+		}
+		h3 {
+			margin-top: 56px;
+			font-family: $filson;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 35.59px;
+			@include bp(lg) {
+				margin-top: 72px;
+			}
+		}
+		h4 {
+			margin: 40px 0 32px;
+			@include bp(lg) {
+				margin: 56px 0 32px;
+			}
+		}
+		ul, li {
+			list-style: none;
+			padding: 0;
+		}
+		li:before {
+			content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+			color: $iris;
+			margin-left: calc(var(--step-1) * -1);
+			display: inline-block;
+			width: var(--step-1);
+		}
+
+		.list-container {
+			width: 100%;
+			flex-direction: column;
+			justify-content: space-between;
+			@include bp(lg) {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+		}
+		.list {
+
+			@include bp(lg) {
+				width: 50%;
+				max-width: 400px;
+			}
+		}
+	}
+
+}

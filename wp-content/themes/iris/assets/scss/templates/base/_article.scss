@@ -1,0 +1,48 @@
+.article {
+	&.intro {
+		> .inner {
+			position: relative;
+			padding: 150px 0 50px;
+		}
+	}
+
+	&.content-block {
+		.white-block {
+			max-width: 800px;
+			padding: 104px 95px;
+			box-shadow: 0 14px 99px 0 rgba(7, 7, 66, 0.1);
+			justify-content: flex-start;
+			align-items: flex-start;
+			text-align: initial;
+		}
+
+		img {
+			&.alignleft {
+				max-width: 290px;
+				float: left;
+				margin-right: 30px;
+			}
+			&.alignright {
+				max-width: 290px;
+				float: right;
+				margin-left: 30px;
+			}
+		}
+	}
+
+	&.who-we-serve {
+		padding-bottom: 168px;
+		top: -40px;
+	}
+
+	&.spacer {
+		min-height: 136px;
+	}
+
+	.blob-purple-2 {
+		position: absolute;
+		top: -150px;
+		left: -500px;
+		z-index: -1;
+	}
+}

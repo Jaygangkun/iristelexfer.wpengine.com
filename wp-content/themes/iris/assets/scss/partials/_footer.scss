@@ -1,0 +1,138 @@
+footer {
+	padding: 80px 0;
+	position: relative;
+	background-color: $purple_dark;
+	color: $white;
+	z-index: 1;
+}
+
+.form-showing .inner {
+	position: relative;
+	margin-top: -280px;
+}
+
+.contact-form {
+	margin-bottom: 80px;
+	padding: 30px 30px 80px;
+	border-radius: 10px;
+	background-color: $white;
+	box-shadow: 0px 14px 99px rgba(7, 7, 66, 0.1);
+	@include bp(lg) {
+		padding: 80px;
+	}
+	> .flex:first-of-type {
+		margin-top: 50px;
+		flex-direction: column;
+		@include bp(lg) {
+			margin-top: 0;
+			flex-direction: row;
+		}
+		div {
+			margin-top: 24px;
+			text-align: center;
+			order: 1;
+			@include bp(lg) {
+				width: 50%;
+				margin-top: 0;
+				text-align: left;
+				order: 0;
+			}
+		}
+	}
+	h2 {
+		color: $purple_dark;
+	}
+	p {
+		margin-top: 25px;
+		color: $purple_p;
+	}
+	img {
+		width: auto;
+		max-width: 210px;
+		max-height: 234px;
+		margin: 0 auto;
+		@include bp(lg) {
+			max-width: 100%;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		@include bp(xl) {
+			max-height: 300px;
+		}
+	}
+}
+
+.footer-links {
+	flex-direction: column;
+	@include bp(lg) {
+		flex-direction: row;
+	}
+	.column-title {
+		margin: 24px 0;
+		font-family: $filson;
+		font-size: 17px;
+		font-weight: 500;
+		color: $purple_footer;
+		@include bp(lg) {
+			margin: 0 0 24px;
+		}
+	}
+	a {
+		max-width: 80%;
+		margin-bottom: 24px;
+		font-family: $gibson;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.4;
+		color: $white;
+		text-decoration: none;
+		transition: opacity 0.4s;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.footer-boilerplate {
+	margin-top: 32px;
+	flex-direction: column;
+	@include bp(lg) {
+		margin-top: 48px;
+		flex-direction: row;
+	}
+	> .flex {
+		&:last-of-type {
+			min-width: 66.7%;
+			margin-top: 56px;
+			@include bp(lg) {
+				margin-top: 0;
+			}
+		}
+	}
+	p {
+		font-size: 12px;
+		line-height: 20px; //22px
+		color: $purple_footer;
+	}
+}
+
+.footer-logo {
+	max-width: 218px;
+	transition: opacity 0.4s;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.social-links {
+	margin-top: 25px;
+	img {
+		width: 36px;
+		height: 36px;
+		margin-right: 8px;
+		transition: opacity 0.4s;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

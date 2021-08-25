@@ -1,0 +1,15 @@
+.select-wrap {
+  margin: 2px 0 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.wp-block-separator {
+
+  &.is-style-wide {
+    max-width: 710px;
+  }
+
+}

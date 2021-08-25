@@ -1,0 +1,113 @@
+/******************************************************************
+Site Name: Column Five Master template
+Author: Column Five Media
+
+Stylesheet: Main Stylesheet
+
+******************************************************************/
+
+// CSS Reset
+@import "partials/reset";
+
+// Sass REM Calculations
+@import "partials/sass-rem";
+
+// Sass variables
+@import "partials/variables";
+
+
+/*********************
+IMPORTING PARTIALS
+*********************/
+
+// Grid
+@import "partials/grid";
+
+// typography
+@import "partials/typography";
+
+// various elements
+@import "partials/elements";
+
+// import navigation
+@import "partials/nav";
+
+// import navigation
+@import "partials/forms";
+
+// import header
+@import "partials/header";
+
+// import footer
+@import "partials/footer";
+
+// import 404
+@import "partials/404";
+
+// import Search
+@import "partials/search";
+
+
+/*********************
+BASE (MOBILE) SIZE
+*********************/
+
+@import "templates/base/global";
+@import "templates/base/about-us";
+@import "templates/base/blog";
+@import "templates/base/article";
+@import "templates/base/contact-us";
+@import "templates/base/home";
+@import "templates/base/regulations";
+@import "templates/base/services";
+@import "templates/base/states";
+@import "templates/base/what-is";
+// @import "templates/base/blog";
+// @import "templates/base/blog-single";
+
+/*********************
+TABLET & SMALLER LAPTOPS
+*********************/
+@media only screen and (min-width: $min-sm) {
+
+  @import "templates/sm/global";
+  @import "templates/sm/home";
+  @import "templates/sm/blog";
+  @import "templates/sm/blog-single";
+  @import "templates/sm/resources";
+
+}
+
+// end of media query
+
+
+/*********************
+DESKTOP
+*********************/
+@media only screen and (min-width: $min-md) {
+
+  @import "templates/md/global";
+  @import "templates/md/home";
+  @import "templates/md/blog";
+  @import "templates/md/blog-single";
+  @import "templates/md/resources";
+
+}
+
+// end of media query
+
+
+/*********************
+LARGE VIEWING SIZE
+*********************/
+@media only screen and (min-width: $min-lg) {
+
+  @import "templates/lg/global";
+  @import "templates/lg/home";
+
+}
+
+// end of media query
+
+@import "partials/blog";
+@import "templates/base/extended";

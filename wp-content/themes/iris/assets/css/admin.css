@@ -1,0 +1,64 @@
+#adminmenu li.wp-menu-separator {
+     height: 1px;
+     margin: 12px 0;
+}
+
+#adminmenu div.separator {
+     background: #444;
+     height: 1px;
+}
+
+.wp-admin .acf-fields > .acf-field-group {
+     border-top: 20px solid #f1f1f1;
+     border-bottom: 20px solid #f1f1f1;
+}
+
+.wp-admin .acf-field[data-name='home_card_title'] {
+     border-top: 50px solid #f1f1f1d4;
+     border-top-width: 50px !important;
+}
+
+.wp-admin .acf-field[data-name='home_card_cta_icon'] {
+     padding-bottom: 60px !important;
+}
+
+.wp-admin .acf-editor-wrap[data-toolbar='bare'] iframe {
+     min-height: 144px;
+     height: 144px !important;
+}
+
+.wp-admin .acf-editor-wrap[data-toolbar='bare'] .mce-statusbar {
+     height: 0;
+     overflow: hidden;
+}
+
+.wp-admin .single-line .acf-editor-wrap[data-toolbar='bare'] iframe {
+     min-height: 56px;
+     height: 56px !important;
+}
+
+.wp-admin .acf-field[data-type="group"] {
+     padding: 0;
+     border: none;
+}
+
+.wp-admin .acf-field[data-type="group"] > .acf-label {
+     display: none;
+}
+
+.wp-admin .acf-field[data-type="group"] .acf-fields.-sidebar {
+     border: none;
+}
+
+.wp-admin.taxonomy-regulations .term-parent-wrap {
+     display: none;
+}
+
+.wp-admin .featured_image.column-featured_image img {
+     width: 100px;
+     height: 100px;
+}
+
+.wp-admin .plugin-install-tab-featured img[src*='.svg'] {
+     max-width: 128px;
+}

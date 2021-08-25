@@ -1,0 +1,53 @@
+.states {
+
+	&.intro {
+		padding: 208px 0 344px;
+		text-align: center;
+		.flex {
+			align-items: center;
+			justify-content: center;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+			// height: 100px;
+			margin-right: 64px;
+		}
+	}
+
+	&.content-block {
+		top: -208px;
+		.white-block {
+			max-width: 800px;
+			padding: 104px 95px;
+			box-shadow: 0 14px 99px 0 rgba(7, 7, 66, 0.1);
+			justify-content: flex-start;
+			align-items: flex-start;
+			text-align: initial;
+		}
+
+		img {
+			&.alignleft {
+				max-width: 290px;
+				float: left;
+				margin-right: 30px;
+			}
+			&.alignright {
+				max-width: 290px;
+				float: right;
+				margin-left: 30px;
+			}
+		}
+	}
+
+	&.who-we-serve {
+		padding-bottom: 168px;
+		top: -104px;
+	}
+
+	&.spacer {
+		min-height: 136px;
+	}
+	
+}

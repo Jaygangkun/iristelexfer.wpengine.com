@@ -1,0 +1,76 @@
+#wpadminbar {
+  top: auto;
+  bottom: 0;
+  display: block;
+}
+
+a {
+
+  &.btn {
+
+      &:hover {
+        background: $cta-primary-hover;
+        color: #fff;
+        border: 1px solid $cta-primary-hover;
+
+          span i {
+            color: white;
+            -ms-transform: translateX(2px);
+                transform: translateX(2px);
+          }
+
+      }
+
+      &.btn-cta {
+
+        &:hover {
+          background: lighten($cta-primary, 10%);
+          border: none;
+        }
+
+      }
+
+  }
+
+}
+
+.wp-block-separator {
+
+  &.is-style-wide {
+    max-width: 940px;
+  }
+
+}
+
+.clear-header {
+  padding-top: $desk-height;
+}
+
+.featherlight {
+
+    .featherlight-close-icon:hover {
+      color: rgba($gray, .6);
+    }
+
+}
+
+.post-pagination {
+
+    ul {
+
+          li {
+
+                a {
+                  transition: color .3s ease;
+
+                    &:hover {
+                      color: $gray;
+                    }
+
+                }
+
+          }
+
+    }
+
+}

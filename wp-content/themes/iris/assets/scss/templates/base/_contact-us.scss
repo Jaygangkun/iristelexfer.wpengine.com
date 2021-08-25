@@ -1,0 +1,122 @@
+.contact-us {
+	&.intro {
+		padding: 168px 0 0;
+		text-align: center;
+		h2, p {
+			max-width: 640px;
+			margin: 0 auto;
+		}
+		p {
+			margin-top: 32px;
+		}
+		img {
+			position: relative;
+			top: 80px;
+			@include bp(lg) {
+				margin-top: 104px;
+				top: 0;
+			}
+		}
+	}
+
+	&.form {
+		padding-bottom: 204px;
+		background-color: $white;
+		@include bp(lg) {
+			top: -200px;
+		}
+		.form {
+			max-width: 640px;
+			top: 120px;
+			@include bp(lg) {
+				top: 248px;
+			}
+			@include bp(xl) {
+				max-width: 900px;
+			}
+		}
+	}
+
+	&.report {
+		padding: 80px 0;
+		background-color: #F2F5FC;
+		@include bp(lg) {
+			padding: 136px 0;
+		}
+		> .inner > .flex {
+			flex-direction: column;
+			@include bp(md) {
+				flex-direction: row;
+			}
+		}
+		.column {
+			@include bp(sm) {
+				align-items: center;
+			}
+			@include bp(md) {
+				align-items: flex-start;
+			}
+		}
+		.column:first-of-type {
+			@include bp(md) {
+				border-right: 1px solid rgba(161, 167, 209, 0.3);
+			}
+		}
+		.column:last-of-type {
+			margin-top: 72px;
+			@include bp(md) {
+				margin-top: 0;
+				h4, p {
+					margin-left: auto;
+				}
+			}
+		}
+		h4, p {
+			width: 290px;
+			text-align: left;
+			@include bp(xl) {
+				width: 400px;
+			}
+		}
+		h4 {
+			color: $purple_dark;
+		}
+		p:first-of-type {
+			margin-top: 32px;
+		}
+	}
+
+	&.locations {
+		padding: 80px 0;
+		text-align: center;
+		@include bp(lg) {
+			padding: 136px 0;
+		}
+		.offices {
+			margin-top: 64px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			@include bp(lg) {
+				flex-direction: row;
+			}
+			.office {
+				height: 168px;
+				// margin-top: 48px;
+				align-items: flex-end;
+				justify-content: center;
+				@include bp(lg) {
+					margin-top: 0;
+					align-items: center;
+				}
+			}
+			h4, p {
+				margin-top: 32px;
+			}
+			img {
+				// height: 168px;
+				object-fit: contain;
+			}
+		}
+	}
+}

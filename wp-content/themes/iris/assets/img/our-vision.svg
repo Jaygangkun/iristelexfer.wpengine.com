@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="801" height="418" viewBox="0 0 801 418">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1207" data-name="Rectangle 1207" width="801" height="418" rx="10" transform="translate(1869 5995)" fill="#243ea2"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_16" data-name="Mask Group 16" transform="translate(-1869 -5995)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_576" data-name="Rectangle 576" width="801" height="418" rx="10" transform="translate(1869 5995)" fill="#243ea2"/>
+    <path id="Path_626" data-name="Path 626" d="M309.869.008c149.17,1.579,375.754,240.067,302.112,317.984S90.829,391.171,15.3,311.675,160.7-1.571,309.869.008Z" transform="translate(2017.171 6406.744) rotate(-11)" fill="none" stroke="#b9b3df" stroke-width="2" stroke-dasharray="9" opacity="0.297"/>
+    <path id="Path_625" data-name="Path 625" d="M275.942.021C409.555,2.546,613.9,239.605,548.4,316.1S82.062,385.016,13.948,306,142.329-2.505,275.942.021Z" transform="translate(2512.213 5808.073) rotate(2)" fill="none" stroke="#b9b3df" stroke-width="2" stroke-dasharray="9" opacity="0.297"/>
+    <path id="Path_624" data-name="Path 624" d="M279.765,0c134.1.962,336.746,227.379,270.2,301.889S81.124,373.515,13.575,298.043,145.668-.959,279.765,0Z" transform="matrix(-0.934, 0.358, -0.358, -0.934, 2085.143, 6184.183)" fill="none" stroke="#a1a7d1" stroke-width="2" stroke-dasharray="9" opacity="0.297"/>
+    <path id="Path_621" data-name="Path 621" d="M274.992.033c133.793,3.2,339.553,241,274.347,317.067S82.756,383.577,14.169,304.311,141.2-3.164,274.992.033Z" transform="matrix(0.978, 0.208, -0.208, 0.978, 2533.63, 5768.678)" fill="#f434a6"/>
+    <path id="Path_623" data-name="Path 623" d="M292.622.035c142.332,3.285,361.158,244.7,291.768,321.886S88,389.253,15.062,308.781,150.29-3.25,292.622.035Z" transform="matrix(0.978, 0.208, -0.208, 0.978, 2164.824, 6283.568)" fill="#7869c6"/>
+    <path id="Path_622" data-name="Path 622" d="M283.9,0C419.338.358,622.84,230.957,555.242,307.466S81.345,382.9,13.511,306.037,148.472-.357,283.9,0Z" transform="translate(2121.025 6036.999) rotate(137)" fill="#002b79"/>
+  </g>
+</svg>
